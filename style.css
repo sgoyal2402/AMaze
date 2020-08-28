@@ -1,0 +1,155 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.carousel-item {
+  padding: 7% 10%;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav {
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+  animation-fill-mode: both;
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  margin: 20px 0;
+  font-size: 1rem;
+  animation-name: slideDown;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+}
+
+/* Main Section */
+
+.title {
+  margin-left: auto;
+  background-color: rgba(212, 228, 212, 0.5);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-image: url("https://www.knueve.com/wp-content/uploads/2016/11/man-using-tablet-1600-600.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* App Features */
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.image {
+  border-radius: 100%;
+}
+
+#features .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Testinomials */
+
+#testinomials .container {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+}
+
+.test {
+  margin-top: auto;
+  justify-self: flex-end;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(16, 3, 36);
+  padding-top: 30px;
+  color: #fff;
+}
+
+em {
+  font-weight: bold;
+}
+
+footer i {
+  color: #fff;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  opacity: 0.5;
+  will-change: transform, opacity;
+}
+
+footer i:hover {
+  opacity: 1;
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+footer i:active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  .title {
+    margin-top: auto;
+    height: 200px;
+  }
+  .container-fluid {
+    height: 50vh;
+  }
+  .carousel-item {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+}
