@@ -18,6 +18,6 @@ Deployed on Vercel (ZEIT)
 
 ## View My all projects
 
-Dashboard Link -  https://vercel.com/sgoyal2402/
+Dashboard Link -  https://github.com/sgoyal2402
 
 
